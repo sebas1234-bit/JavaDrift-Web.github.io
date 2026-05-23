@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Java Drift® - Acelera tu Código</title>
   
-  <!-- FAVICON - Isotipo -->
+  <!-- FAVICON -->
   <link rel="icon" href="https://raw.githubusercontent.com/sebas1234-bit/Java_Drift-WEB.github.io/main/isotipo_JD.png" type="image/png">
   
   <style>
@@ -30,18 +30,28 @@
 
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-    /* NAVEGACIÓN */
+    /* NAVEGACIÓN CON LOGO A LA IZQUIERDA */
     nav {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
-      padding: 20px 8%;
-      background: rgba(10, 10, 10, 0.95);
+      padding: 18px 8%;
+      background: rgba(10, 10, 10, 0.96);
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 1000;
       border-bottom: 1px solid rgba(74, 158, 255, 0.2);
+    }
+
+    .nav-logo img {
+      height: 68px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-logo img:hover {
+      transform: scale(1.05);
     }
 
     nav ul {
@@ -170,8 +180,13 @@
 </head>
 <body>
 
-  <!-- NAVEGACIÓN -->
+  <!-- NAVEGACIÓN CON LOGO A LA IZQUIERDA -->
   <nav>
+    <div class="nav-logo">
+      <img src="https://raw.githubusercontent.com/sebas1234-bit/Java_Drift-WEB.github.io/main/logo2_JD.png" 
+           alt="Java Drift Logo">
+    </div>
+    
     <ul>
       <li><a href="#juego">El Juego</a></li>
       <li><a href="#origen">Origen</a></li>
