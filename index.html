@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Java Drift® - Acelera tu Código</title>
   
-  <!-- FAVICON (Isotipo) - Cambia la URL cuando lo subas -->
-  <link rel="icon" href="https://raw.githubusercontent.com/sebas1234-bit/Java_Drift-WEB.github.io/main/assets/isotipo-jd.png" type="image/png">
+  <!-- FAVICON - Isotipo -->
+  <link rel="icon" href="https://raw.githubusercontent.com/sebas1234-bit/Java_Drift-WEB.github.io/main/isotipo_JD.png" type="image/png">
   
   <style>
     :root {
@@ -30,10 +30,10 @@
 
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-    /* NAVEGACIÓN MEJORADA */
+    /* NAVEGACIÓN */
     nav {
       display: flex;
-      justify-content: flex-end;     /* Movido a la derecha */
+      justify-content: flex-end;
       align-items: center;
       padding: 20px 8%;
       background: rgba(10, 10, 10, 0.95);
@@ -60,16 +60,16 @@
       padding: 8px 0;
     }
 
-    /* Animación de hover */
     nav a::after {
       content: '';
       position: absolute;
       width: 0;
-      height: 2px;
+      height: 3px;
       bottom: 0;
       left: 0;
       background: var(--azul-neon);
       transition: width 0.4s ease;
+      box-shadow: 0 0 8px var(--azul-neon);
     }
 
     nav a:hover {
@@ -162,7 +162,7 @@
     .card:hover {
       transform: translateY(-20px);
       border-color: var(--azul-neon);
-      box-shadow: 0 25px 50px rgba(74, 158, 255, 0.15);
+      box-shadow: 0 25px 50px rgba(74, 158, 255, 0.2);
     }
 
     .card h3 { color: var(--azul-neon); margin-bottom: 20px; font-size: 1.7rem; }
@@ -206,11 +206,11 @@
         </div>
         <div class="card">
           <h3>02. IA Inteligente</h3>
-          <p>Rivales controlados por algoritmos de coordenadas y trazado dinámico. Competencia arcade auténtica.</p>
+          <p>Rivales controlados por algoritmos de coordenadas y trazado dinámico.</p>
         </div>
         <div class="card">
           <h3>03. Atmósfera Épica</h3>
-          <p>Físicas de derrape precisas combinadas con estética retro de los 90.</p>
+          <p>Físicas de derrape precisas con estética retro de los 90.</p>
         </div>
       </div>
     </div>
@@ -245,18 +245,10 @@
     <div class="container">
       <h2 class="section-title">ROADMAP</h2>
       <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 25px;">
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);">
-          <strong>Fase 1 (Actual)</strong> — Optimización Alpha
-        </div>
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);">
-          <strong>Fase 2</strong> — Expansión de pistas y personalización
-        </div>
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);">
-          <strong>Fase 3</strong> — Modo Multijugador
-        </div>
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);">
-          <strong>Fase 4</strong> — Portabilidad a móvil y consolas
-        </div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 1 (Actual)</strong> — Optimización Alpha</div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 2</strong> — Expansión de pistas y personalización</div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 3</strong> — Modo Multijugador</div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 4</strong> — Portabilidad a móvil y consolas</div>
       </div>
     </div>
   </section>
@@ -279,4 +271,3 @@
 
 </body>
 </html>
-
