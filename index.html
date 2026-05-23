@@ -268,19 +268,42 @@
     </div>
   </section>
 
-  <!-- CONTACTO -->
+   <!-- CONTACTO FUNCIONAL -->
   <footer id="contacto">
     <div class="container" style="text-align:center;">
       <h2 class="section-title">¿Quieres unirte a la carrera?</h2>
       <p style="margin-bottom: 40px; font-size: 1.2rem;">Escríbenos si eres desarrollador o quieres colaborar.</p>
       
-      <form style="max-width: 520px; margin: 0 auto;">
-        <input type="text" placeholder="Tu nombre" style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;"><br>
-        <input type="email" placeholder="Correo electrónico" style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;"><br>
-        <textarea placeholder="Mensaje..." rows="5" style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;"></textarea><br>
-        <button type="submit" style="padding:16px 50px; background:var(--dorado); color:black; border:none; border-radius:50px; font-weight:bold; font-size:1.1rem;">ENVIAR MENSAJE</button>
+      <form id="contact-form" action="https://formspree.io/f/xjgzoobq" method="POST" style="max-width: 520px; margin: 0 auto;">
+        <input 
+          type="text" 
+          name="nombre" 
+          placeholder="Tu nombre" 
+          required
+          style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;">
+        
+        <input 
+          type="email" 
+          name="email" 
+          placeholder="Correo electrónico" 
+          required
+          style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;">
+        
+        <textarea 
+          name="mensaje" 
+          placeholder="Mensaje..." 
+          rows="5" 
+          required
+          style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;"></textarea>
+        
+        <button 
+          type="submit" 
+          style="padding:16px 50px; background:var(--dorado); color:black; border:none; border-radius:50px; font-weight:bold; font-size:1.1rem; cursor:pointer;">
+          ENVIAR MENSAJE
+        </button>
       </form>
-      <p style="margin-top: 70px; opacity: 0.6;">© 2026 Java Drift® - Todos los derechos reservados</p>
+
+      <p style="margin-top: 50px; opacity: 0.6;">© 2026 Java Drift® - Todos los derechos reservados</p>
     </div>
   </footer>
 
