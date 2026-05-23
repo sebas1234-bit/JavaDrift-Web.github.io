@@ -30,7 +30,7 @@
 
     .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-    /* NAVEGACIÓN CON LOGO A LA IZQUIERDA */
+    /* NAVEGACIÓN */
     nav {
       display: flex;
       justify-content: space-between;
@@ -180,7 +180,7 @@
 </head>
 <body>
 
-  <!-- NAVEGACIÓN CON LOGO A LA IZQUIERDA -->
+  <!-- NAVEGACIÓN (Solo una vez) -->
   <nav>
     <div class="nav-logo">
       <img src="https://raw.githubusercontent.com/sebas1234-bit/Java_Drift-WEB.github.io/main/logo2_JD.png" 
@@ -215,18 +215,9 @@
     <div class="container">
       <h2 class="section-title">EL JUEGO</h2>
       <div class="features">
-        <div class="card">
-          <h3>01. Rendimiento Puro</h3>
-          <p>Renderizado 2D optimizado matemáticamente. Máxima fluidez y respuesta inmediata sin motores pesados.</p>
-        </div>
-        <div class="card">
-          <h3>02. IA Inteligente</h3>
-          <p>Rivales controlados por algoritmos de coordenadas y trazado dinámico.</p>
-        </div>
-        <div class="card">
-          <h3>03. Atmósfera Épica</h3>
-          <p>Físicas de derrape precisas con estética retro de los 90.</p>
-        </div>
+        <div class="card"><h3>01. Rendimiento Puro</h3><p>Renderizado 2D optimizado matemáticamente. Máxima fluidez y respuesta inmediata sin motores pesados.</p></div>
+        <div class="card"><h3>02. IA Inteligente</h3><p>Rivales controlados por algoritmos de coordenadas y trazado dinámico.</p></div>
+        <div class="card"><h3>03. Atmósfera Épica</h3><p>Físicas de derrape precisas con estética retro de los 90.</p></div>
       </div>
     </div>
   </section>
@@ -260,49 +251,27 @@
     <div class="container">
       <h2 class="section-title">ROADMAP</h2>
       <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 25px;">
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 1 (Actual)</strong> — Optimización Alpha</div>
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 2</strong> — Expansión de pistas y personalización</div>
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 3</strong> — Modo Multijugador</div>
-        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"> <strong>Fase 4</strong> — Portabilidad a móvil y consolas</div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"><strong>Fase 1 (Actual)</strong> — Optimización Alpha</div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"><strong>Fase 2</strong> — Expansión de pistas y personalización</div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"><strong>Fase 3</strong> — Modo Multijugador</div>
+        <div style="background: rgba(26,35,51,0.8); padding: 25px 35px; border-radius: 12px; border-left: 5px solid var(--dorado);"><strong>Fase 4</strong> — Portabilidad a móvil y consolas</div>
       </div>
     </div>
   </section>
 
-   <!-- CONTACTO FUNCIONAL -->
+  <!-- CONTACTO FUNCIONAL -->
   <footer id="contacto">
     <div class="container" style="text-align:center;">
       <h2 class="section-title">¿Quieres unirte a la carrera?</h2>
       <p style="margin-bottom: 40px; font-size: 1.2rem;">Escríbenos si eres desarrollador o quieres colaborar.</p>
       
-      <form id="contact-form" action="https://formspree.io/f/xjgzoobq" method="POST" style="max-width: 520px; margin: 0 auto;">
-        <input 
-          type="text" 
-          name="nombre" 
-          placeholder="Tu nombre" 
-          required
-          style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;">
-        
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Correo electrónico" 
-          required
-          style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;">
-        
-        <textarea 
-          name="mensaje" 
-          placeholder="Mensaje..." 
-          rows="5" 
-          required
-          style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;"></textarea>
-        
-        <button 
-          type="submit" 
-          style="padding:16px 50px; background:var(--dorado); color:black; border:none; border-radius:50px; font-weight:bold; font-size:1.1rem; cursor:pointer;">
-          ENVIAR MENSAJE
-        </button>
+      <form action="https://formspree.io/f/xjgzoobq" method="POST" style="max-width: 520px; margin: 0 auto;">
+        <input type="text" name="nombre" placeholder="Tu nombre" required style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;">
+        <input type="email" name="email" placeholder="Correo electrónico" required style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;">
+        <textarea name="mensaje" placeholder="Mensaje..." rows="5" required style="width:100%; padding:16px; margin:10px 0; background:#1A2333; border:1px solid #4A9EFF; color:white; border-radius:8px;"></textarea>
+        <button type="submit" style="padding:16px 50px; background:var(--dorado); color:black; border:none; border-radius:50px; font-weight:bold; font-size:1.1rem; cursor:pointer;">ENVIAR MENSAJE</button>
       </form>
-
+      
       <p style="margin-top: 50px; opacity: 0.6;">© 2026 Java Drift® - Todos los derechos reservados</p>
     </div>
   </footer>
